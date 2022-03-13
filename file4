@@ -1,0 +1,25 @@
+[O{
+    "Version": "2012-10-17",
+    "Id": "example-ID",
+    "Statement": [
+        {
+            "Sid": "Example SNS topic policy",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "s3.amazonaws.com"
+            },
+            "Action": [
+                "SNS:Publish"
+            ],
+            ##"Resource": "arn:aws:sns:ap-south-1:376653182402:myeventnotifi",
+            "Condition": {
+                "ArnLike": {
+                    "aws:SourceArn": "arn:aws:s3:*:*:demobucketexit233"
+                },
+                "StringEquals": {
+                    "aws:SourceAccount": "376653182402"
+                }
+            }
+        }
+    ]
+}                 
