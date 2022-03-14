@@ -1,0 +1,28 @@
+ message.
+UNDOING CHANGES
+git status List which files are staged, unstaged, and untracked.
+REMOTE REPOSITORIES
+git log Display the entire commit history using the default format.
+For customization see additional options.
+git branch List all of the branches in your repo. Add a <branch> argument to
+create a new branch with the name <branch>.
+git checkout -b
+<branch>
+Create and check out a new branch named <branch>.
+Drop the -b flag to checkout an existing branch.
+git merge <branch> Merge <branch> into the current branch.
+git add
+<directory>
+Stage all changes in <directory> for the next commit.
+Replace <directory> with a <file> to change a specific file.
+git clone <repo>
+git config
+user.name <name>
+GIT BRANCHES
+Define author name to be used for all commits in current repo. Devs
+commonly use --global flag to set config options for current user.
+git rebase <base>
+git reflog Show a log of changes to the local repository’s HEAD.
+Add --relative-date flag to show date info or --all to show all refs.
+Clone repo located at <repo> onto local machine. Original repo can be
+located on the local filesystem or on a remote machine via HTTP or SSH.
